@@ -1,0 +1,22 @@
+name: 01 - Building Blocks
+on:
+  push:
+    branches:
+      - main
+jobs:
+    echo-hello:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Echo GH_ACTIONS
+            run: echo "Hello, World!"
+    echo-Goodbye:
+        runs-on: ubuntu-latest
+        steps:
+          - name: failed step
+            run: |
+                echo "This step will fail"
+                exit 1
+          - name: Goodbye
+            run: echo "Goodbye!"
+
+  
