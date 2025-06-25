@@ -1,5 +1,13 @@
 name: 02-Workflow Events
-on: push
+on:
+  workflow_dispatch: # Allows manual triggering of the workflow
+  push: # Triggered on push events
+    branches:
+      - main # Only on the main branch
+  pull_request: # Triggered on pull request events
+  schedule: # Scheduled events
+    - cron: '*/10 * * * *'
+
 jobs:
     echo:
         runs-on: ubuntu-latest
