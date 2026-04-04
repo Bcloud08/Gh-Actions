@@ -3,7 +3,7 @@ name: Run-Shell-Commands
 on: [push]
 
 jobs:
-    run-shell-comands
+    run-shell-comands:
         runs-on: ubuntu-latest
         steps:
             - name: Echo String
