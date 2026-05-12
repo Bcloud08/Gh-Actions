@@ -1,2 +1,0 @@
-# Gh-Actions
-learning Purpose
